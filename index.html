@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="max-w-full flex justify-center">
+  <div class="corecontainer w-9/12">
+    <header class="w-full h-20 flex justify-between border-b-1 border-gray-300">
+      <div class="contentheader1 flex justify-between place-items-center space-x-10 w-auto">
+        <h1 class="text-4xl font-bold font-sans -mt-3">sneakers</h1>
+
+        <div class="relative inline-block pb-1 cursor-pointer group">
+        <a class="text-lg text-gray-700" href="">Collections</a>
+        <div class="absolute left-1/2 bottom-0 w-0 h-1 bg-orange-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></div>
+        </div>
+
+        <div class="relative inline-block pb-1 cursor-pointer group">
+        <a class="text-lg text-gray-700" href="">Men</a>
+        <div class="absolute left-1/2 bottom-0 w-0 h-1 bg-orange-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></div>
+        </div>
+
+        <div class="relative inline-block pb-1 cursor-pointer group">
+        <a class="text-lg text-gray-700" href="">Women</a>
+        <div class="absolute left-1/2 bottom-0 w-0 h-1 bg-orange-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></div>
+        </div>
+
+        <div class="relative inline-block pb-1 cursor-pointer group">
+        <a class="text-lg text-gray-700" href="">About</a>
+        <div class="absolute left-1/2 bottom-0 w-0 h-1 bg-orange-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></div>
+        </div>
+
+        <div class="relative inline-block pb-1 cursor-pointer group">
+        <a class="text-lg text-gray-700" href="">Contact</a>
+        <div class="absolute left-1/2 bottom-0 w-0 h-1 bg-orange-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></div>
+        </div>
+
+      </div>
+      <div class="contentheader2 flex justify-end w-auto space-x-12 place-items-center">
+        <a href=""><img class="w-6 h-6" src="./images/icon-cart.svg" alt=""></a> 
+        <a href=""><img class="w-13 h-13 rounded-full border-2 border-transparent transition-all duration-300 hover:border-orange-500" src="./images/image-avatar.png" alt=""></a> 
+      </div>
+    </header>
+
+    <section class="py-20 px-10 w-full h-auto flex">
+      <div class="ctnimages w-auto h-auto">
+        <div class="ctnimagep w-auto h-auto">
+          <img class="rounded-2xl max-w-lg" src="./images/image-product-1.jpg" alt="">
+        </div>
+        <div class="contimagessec flex justify-between w-auto h-auto py-10">
+          <img id="imagenpequeña1" class="w-24 h-24 rounded-lg cursor-pointer border-4 border-transparent transition-all duration-300 hover:border-orange-500 hover:opacity-90" src="./images/image-product-1-thumbnail.jpg" alt="" onclick="abrirModal(this)">
+          <img id="imagenpequeña2" class="w-24 h-24 rounded-lg cursor-pointer border-4 border-transparent transition-all duration-300 hover:border-orange-500 hover:opacity-90" src="./images/image-product-2-thumbnail.jpg" alt="" onclick="abrirModal(this)">
+          <img id="imagenpequeña3" class="w-24 h-24 rounded-lg cursor-pointer border-4 border-transparent transition-all duration-300 hover:border-orange-500 hover:opacity-90" src="./images/image-product-3-thumbnail.jpg" alt="" onclick="abrirModal(this)">
+          <img id="imagenpequeña4" class="w-24 h-24 rounded-lg cursor-pointer border-4 border-transparent transition-all duration-300 hover:border-orange-500 hover:opacity-90" src="./images/image-product-4-thumbnail.jpg" alt="" onclick="abrirModal(this)">
+        </div>
+      </div>
+
+      <div class="pricesandtext via-slate-800 w-full h-auto flex justify-center">
+        <div class="textctn max-h-3/4 max-w-2/3 flex place-items-center">
+          <div>
+            <h3 class="font-medium text-lg text-gray-500 py-3">SNEAKER COMPANY
+              <h1 class="font-bold text-5xl font-sans">Fall Limited Edition Sneakers</h1>
+              <p class="font-semibold text-zinc-500 text-lg py-7">These low-profile are your perfect casual wear companion. Featuring a durable rubber outer sole, they´ll withstand everything the weather can offer.</p>
+            </h3>
+
+            <div class="prices flex">
+              <div class="priceprincipal ">
+                <h1 class="text-3xl font-bold">$125.00</h1>
+              </div>
+              <div class="descount flex place-items-center pl-5">
+                <h1 class="font-bold bg-black w-14 h-7 text-white flex justify-center rounded-sm">50%</h1>
+              </div>
+            </div>
+
+            <div class="pricebefore">
+              <h1 class="text-gray-500 font-medium py-2 line-through">$250.00</h1>
+            </div>
+
+            <div id="buttonsctn" class="buttonsctn w-auto h-auto py-5 flex justify-evenly">
+              <div class="button-container w-40 h-12 bg-gray-100 flex justify-evenly place-items-center rounded-lg">
+                <button class="decrement w-5 h-5">
+                  <img src="./images/icon-minus.svg" alt="">
+                </button>
+                <span class="counter-value font-bold">0</span>
+                <button class="increment w-5 h-5"><img src="./images/icon-plus.svg" alt=""></button>
+              </div>
+
+              <div id="cartbutton" class="addcartbtnctn bg-orange-400 w-60 h-12 rounded-lg flex place-items-center justify-center">
+                <div class="rounded-lg flex justify-evenly">
+                  <button class="font-bold text-base flex gap-3 cursor-pointer"><img class="w-5 h-5" src="./images/icon-cart.svg" alt="">Add To Cart</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Modal (corregido) -->
+<div class="fixed inset-0 bg-black/50 flex justify-center items-center z-50 hidden" id="modal">
+  <div class="relative">
+      <button class="absolute top-2 right-4 text-white text-3xl font-bold" onclick="cerrarModal()">&times;</button>
+      
+      <!-- Imagen Principal del Modal -->
+      <img id="imagenModalPrincipal" class="max-w-xl rounded-2xl" src="" alt="Imagen Ampliada">
+
+      <div class="contimagessec flex justify-evenly w-auto h-auto py-10">
+          <!-- Miniaturas dentro del modal -->
+          <img class="w-24 h-24 rounded-xl cursor-pointer border-4 border-transparent transition-all duration-300 hover:border-orange-500 hover:opacity-90" src="./images/image-product-1-thumbnail.jpg" alt="" onclick="abrirModal(this)">
+          <img class="w-24 h-24 rounded-xl cursor-pointer border-4 border-transparent transition-all duration-300 hover:border-orange-500 hover:opacity-90" src="./images/image-product-2-thumbnail.jpg" alt="" onclick="abrirModal(this)">
+          <img class="w-24 h-24 rounded-xl cursor-pointer border-4 border-transparent transition-all duration-300 hover:border-orange-500 hover:opacity-90" src="./images/image-product-3-thumbnail.jpg" alt="" onclick="abrirModal(this)">
+          <img class="w-24 h-24 rounded-xl cursor-pointer border-4 border-transparent transition-all duration-300 hover:border-orange-500 hover:opacity-90" src="./images/image-product-4-thumbnail.jpg" alt="" onclick="abrirModal(this)">
+      </div>
+  </div>
+</div>
+
+
+
+      
+
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+    </html>
